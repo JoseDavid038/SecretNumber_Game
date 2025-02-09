@@ -1,0 +1,65 @@
+
+html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body{
+  background-color: black;
+}
+
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+.title-game{
+  color: white;
+  font-weight: bold;
+}
+
+p{
+  color: white;
+  margin: 0;
+}
+
+.alura-img{
+  width: 200px;
+}
+
+.logo-img{
+  width: 70px;
+}
+
+main{
+  display: flex;
+  justify-content: center;
+  column-gap: 15px;
+}
+
+.wizard-img{
+  width: 500px;
+}
+
+
+.left-side{
+  display: flex;
+  flex-direction: column; 
+  align-items: center;
+  justify-content: center;
+  row-gap: 15px;
+}
+
+
+.right-side{
+  display: flex;
+  flex-direction: column;
+}
+
+.result-game{
+  background-color: white;
+  color: black;
+  font-weight: bold;
+}
