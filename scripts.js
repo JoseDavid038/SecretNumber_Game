@@ -77,6 +77,13 @@ guessButton.addEventListener("click", () => {
 });
 
 
+numberInput.addEventListener('keydown', (event) => {
+  if (event.key === 'Enter'){
+    const userGuess = parseInt(numberInput.value);
+    userGuess ? validateResult(userGuess,secretNumber): alert('Please enter a number');
+  }
+})
+
 function clear(){
 
   document.querySelector('.js-input').focus();
