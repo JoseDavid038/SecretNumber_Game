@@ -1,5 +1,6 @@
 
-html{
+
+html, body{
   margin: 0;
   padding: 0;
   height: 100%;
@@ -7,40 +8,44 @@ html{
 
 body{
   background-color: black;
+  font-family: arial;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 10px;
 }
 
 
 header{
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  padding: 10px;
 }
 
 .title-game{
   color: white;
   font-weight: bold;
+  font-size: 1.7rem;
+  text-align: center;
 }
 
-p{
-  color: white;
-  margin: 0;
-}
-
-.alura-img{
-  width: 200px;
-}
 
 .logo-img{
-  width: 70px;
+  width: 60px;
+  height: auto;
 }
 
 main{
   display: flex;
   justify-content: center;
-  column-gap: 15px;
-}
-
-.wizard-img{
-  width: 500px;
+  align-items: center;
+  column-gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  padding: 20px;
 }
 
 
@@ -50,16 +55,90 @@ main{
   align-items: center;
   justify-content: center;
   row-gap: 15px;
+  text-align: center;
 }
+
+
+p{
+  color: white;
+  font-size: 1rem;
+}
+
+.alura-img{
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+
+input{
+  width: 100%;
+  max-width: 150px;
+  padding: 10px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+
+button{
+  width: 100%;
+  max-width: 170px;
+  padding: 7px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: blueviolet;
+  color: white;
+}
+
+.disabledButton{
+  cursor: default;
+  opacity: 0.5;
+}
+
 
 
 .right-side{
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 
-.result-game{
-  background-color: white;
-  color: black;
-  font-weight: bold;
+
+.wizard-img{
+  width: 400px;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 5px;
 }
+
+
+.result-game{
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+/* responsive */
+
+@media (max-width: 768px) {
+  header{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  main{
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  .wizard-img{
+    width: 300px;
+  }
+}
+
